@@ -2,6 +2,7 @@ bazel-hello/bazel-*
 cmake-hello/build/**
 !cmake-hello/build/README
 **/.DS_Store
+# abseil-install is the directory chosen as the 'CMAKE_INSTALL_PREFIX'
 cmake-hello-install-binaries/abseil-install
 # the cloned abseil repo, per the docs approach
 abseil-cpp/
