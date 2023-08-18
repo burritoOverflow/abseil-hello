@@ -16,6 +16,14 @@ $ cmake --build build/ --target install
 $ cd $REPO_PATH
 ```
 
+For shared instead of static libraries, you can add `-DBUILD_SHARED_LIBS:BOOL=ON`
+
+If opting for shared libraries, the following can be used to run the executable (recall that the libraries are installed locally: in: `$REPO_PATH/abseil-install/lib` via the `CMAKE_INSTALL_PREFIX`):
+
+```bash
+env LD_LIBRARY_PATH=./abseil-install/lib ./build/hello_world
+```
+
 Now, back in the repo directory:
 
 ```bash
